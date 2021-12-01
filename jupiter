@@ -6,10 +6,10 @@ flights
 
 from prettytable import PrettyTable 
   
-# Specify the Column Names while initializing the Table 
+
 myTable = PrettyTable(["Name", "Key", "Value"]) 
   
-# Add rows 
+ 
 myTable.add_row(["aeroplaneSizes", "small", 50]) 
 myTable.add_row(["aeroplaneCost", "medium", 100]) 
 myTable.add_row(["DirectDistance", "('Berlin','Milan')", 523]) 
