@@ -25,9 +25,12 @@ for index,row in df.iterrows():
 flights=list(set(flights))#removing duplicates
 
 flights
-
    
-
+DirectDistance={}
+Demand={}
+for index,row in df.iterrows():
+    Distance[row.departureCity,row.arrivalCity]=row.Distance
+    Demand[row.departureCity,row.arrivalCity]=row.Demand
 
 
 
