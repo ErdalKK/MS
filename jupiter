@@ -29,7 +29,7 @@ flights
 DirectDistance={}
 Demand={}
 for index,row in df.iterrows():
-    Distance[row.departureCity,row.arrivalCity]=row.Distance
+    DirectDistance[row.departureCity,row.arrivalCity]=row.Distance
     Demand[row.departureCity,row.arrivalCity]=row.Demand
 
 aeroplaneSizes={'small': 50, 'medium': 100, 'large': 300}
