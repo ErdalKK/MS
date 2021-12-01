@@ -32,7 +32,8 @@ for index,row in df.iterrows():
     Distance[row.departureCity,row.arrivalCity]=row.Distance
     Demand[row.departureCity,row.arrivalCity]=row.Demand
 
-
+aeroplaneSizes={'small': 50, 'medium': 100, 'large': 300}
+aeroplaneCost={'small': 4.5, 'medium': 8, 'large': 20}
 
 
 
