@@ -17,3 +17,19 @@ myTable.add_row(["Demand", "('Moscow','Berlin')", 169])
   
 print(myTable)
 
+
+flights=[]
+for index,row in df.iterrows():
+    flights.append((row.departureCity,row.arrivalCity))
+    flights.append((row.arrivalCity,row.departureCity))
+flights=list(set(flights))#removing duplicates
+
+flights
+
+   
+
+
+
+
+
+
