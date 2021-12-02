@@ -35,5 +35,28 @@ for index,row in df.iterrows():
 aeroplaneSizes={'small': 50, 'medium': 100, 'large': 300}
 aeroplaneCost={'small': 4.5, 'medium': 8, 'large': 20}
 
+values = Profit.values()
+total = sum(values)
+print(total)
+
+PlanesS = SPlanes.values()
+total = sum(PlanesS)
+print(total)
+
+PlanesM = MPlanes.values()
+total = sum(PlanesM)
+print(total)
+
+PlanesL = LPlanes.values()
+total = sum(PlanesL)
+print(total)
 
 
+valuesT = Tickets.values()
+capacity = sum(valuesT)/(sum(PlanesM) + sum(PlanesS) + sum(PlanesL))
+print(capacity)
+
+
+valuesT = Tickets.values() 
+capacity1 = (sum(Demand) - sum(valuesT))/(sum(Demand))*100
+print(capacity1)
